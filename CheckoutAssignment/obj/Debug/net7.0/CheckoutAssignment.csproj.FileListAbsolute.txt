@@ -1,0 +1,14 @@
+C:\Users\Mikas\RiderProjects\CheckoutAssignment\CheckoutAssignment\bin\Debug\net7.0\CheckoutAssignment.exe
+C:\Users\Mikas\RiderProjects\CheckoutAssignment\CheckoutAssignment\bin\Debug\net7.0\CheckoutAssignment.deps.json
+C:\Users\Mikas\RiderProjects\CheckoutAssignment\CheckoutAssignment\bin\Debug\net7.0\CheckoutAssignment.runtimeconfig.json
+C:\Users\Mikas\RiderProjects\CheckoutAssignment\CheckoutAssignment\bin\Debug\net7.0\CheckoutAssignment.dll
+C:\Users\Mikas\RiderProjects\CheckoutAssignment\CheckoutAssignment\bin\Debug\net7.0\CheckoutAssignment.pdb
+C:\Users\Mikas\RiderProjects\CheckoutAssignment\CheckoutAssignment\obj\Debug\net7.0\CheckoutAssignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mikas\RiderProjects\CheckoutAssignment\CheckoutAssignment\obj\Debug\net7.0\CheckoutAssignment.AssemblyInfoInputs.cache
+C:\Users\Mikas\RiderProjects\CheckoutAssignment\CheckoutAssignment\obj\Debug\net7.0\CheckoutAssignment.AssemblyInfo.cs
+C:\Users\Mikas\RiderProjects\CheckoutAssignment\CheckoutAssignment\obj\Debug\net7.0\CheckoutAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Mikas\RiderProjects\CheckoutAssignment\CheckoutAssignment\obj\Debug\net7.0\CheckoutAssignment.dll
+C:\Users\Mikas\RiderProjects\CheckoutAssignment\CheckoutAssignment\obj\Debug\net7.0\refint\CheckoutAssignment.dll
+C:\Users\Mikas\RiderProjects\CheckoutAssignment\CheckoutAssignment\obj\Debug\net7.0\CheckoutAssignment.pdb
+C:\Users\Mikas\RiderProjects\CheckoutAssignment\CheckoutAssignment\obj\Debug\net7.0\CheckoutAssignment.genruntimeconfig.cache
+C:\Users\Mikas\RiderProjects\CheckoutAssignment\CheckoutAssignment\obj\Debug\net7.0\ref\CheckoutAssignment.dll
