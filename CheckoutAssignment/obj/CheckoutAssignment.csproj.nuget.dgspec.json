@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mikas\\RiderProjects\\CheckoutAssignment\\CheckoutAssignment\\CheckoutAssignment.csproj": {}
+    "D:\\School Folders\\KEA-DATAMATIKER\\4 Semester\\Valgfag - C#\\Session 3\\Duck App\\CheckoutAssignment\\CheckoutAssignment\\CheckoutAssignment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mikas\\RiderProjects\\CheckoutAssignment\\CheckoutAssignment\\CheckoutAssignment.csproj": {
+    "D:\\School Folders\\KEA-DATAMATIKER\\4 Semester\\Valgfag - C#\\Session 3\\Duck App\\CheckoutAssignment\\CheckoutAssignment\\CheckoutAssignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mikas\\RiderProjects\\CheckoutAssignment\\CheckoutAssignment\\CheckoutAssignment.csproj",
+        "projectUniqueName": "D:\\School Folders\\KEA-DATAMATIKER\\4 Semester\\Valgfag - C#\\Session 3\\Duck App\\CheckoutAssignment\\CheckoutAssignment\\CheckoutAssignment.csproj",
         "projectName": "CheckoutAssignment",
-        "projectPath": "C:\\Users\\Mikas\\RiderProjects\\CheckoutAssignment\\CheckoutAssignment\\CheckoutAssignment.csproj",
+        "projectPath": "D:\\School Folders\\KEA-DATAMATIKER\\4 Semester\\Valgfag - C#\\Session 3\\Duck App\\CheckoutAssignment\\CheckoutAssignment\\CheckoutAssignment.csproj",
         "packagesPath": "C:\\Users\\Mikas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mikas\\RiderProjects\\CheckoutAssignment\\CheckoutAssignment\\obj\\",
+        "outputPath": "D:\\School Folders\\KEA-DATAMATIKER\\4 Semester\\Valgfag - C#\\Session 3\\Duck App\\CheckoutAssignment\\CheckoutAssignment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Users\\Mikas\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

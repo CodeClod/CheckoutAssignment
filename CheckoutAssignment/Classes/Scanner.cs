@@ -1,29 +1,36 @@
-﻿namespace CheckoutAssignment.Classes;
+﻿using System.Diagnostics;
+
+namespace CheckoutAssignment.Classes;
 
 public class Scanner
 {
     public delegate void VareScannetEventHandler(object sender, char varekode);
     public event VareScannetEventHandler VareScannetEvent;
-
+    
     public void StartScanning()
     {
+        Console.WriteLine("Indtast varekode ('Q' for at afslutte): ");
         while (true)
         {
-            Console.WriteLine("Indtast varekode ('Q' for at afslutte): ");
             char varekode = char.ToUpper(Console.ReadKey().KeyChar);
             
-            // Delay for scanning
-            Thread.Sleep(500);
-
+            
+            // Quits the program
             if (varekode == 'Q')
             {
-                Console.WriteLine("Scanning afsluttet");
+                Console.WriteLine("Scanning afsluttet.");
                 break;
             }
-                
-
-            Console.WriteLine("Scan another item");
+            
+            // Delay for scanning
+                        Thread.Sleep(500);
+            // For input cleanness 
+            
+            
+            // Sends an event to prisberegner or other event reciever
             OnVareScannet(varekode);
+            Console.WriteLine();
+            Console.WriteLine("Scan another item:");
         }
     }
 

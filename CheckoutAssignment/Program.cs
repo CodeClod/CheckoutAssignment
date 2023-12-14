@@ -11,21 +11,16 @@ class Program
         
         Scanner scanner = new Scanner();
         BilligPrisberegner billigPrisBeregner = new BilligPrisberegner();
-        DyrPrisberegner dyrPrisBeregner = new DyrPrisberegner();
+        //DyrPrisberegner dyrPrisBeregner = new DyrPrisberegner();
 
         // Subscribe to the item scanned event
-        /*
-        scanner.VareScannetEvent += billigPrisBeregner.BehandlePrisBeregnetEvent;
-        scanner.VareScannetEvent += dyrPrisBeregner.BehandlePrisBeregnetEvent;
-        */
+        
+        scanner.VareScannetEvent += billigPrisBeregner.BehandleVareScannetEvent;
+        // scanner.VareScannetEvent += dyrPrisBeregner.BehandleVareScannetEvent;
+        
 
         Console.WriteLine("Hello! Please scan all your wares here.");
         // Start scanning from the console
         scanner.StartScanning();
-        
-        Console.ReadLine();
-
-            
-        
     }
 }
