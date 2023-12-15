@@ -9,7 +9,7 @@ public class Scanner
     
     public void StartScanning()
     {
-        Console.WriteLine("Indtast varekode ('Q' for at afslutte): ");
+        Console.WriteLine("Indtast varekoder ('Q' for at afslutte): ");
         while (true)
         {
             char varekode = char.ToUpper(Console.ReadKey().KeyChar);
@@ -30,7 +30,7 @@ public class Scanner
             // Sends an event to prisberegner or other event reciever
             OnVareScannet(varekode);
             Console.WriteLine();
-            Console.WriteLine("Scan another item:");
+            Console.WriteLine("Scan ny vare:");
         }
     }
 

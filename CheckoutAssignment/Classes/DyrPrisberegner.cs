@@ -8,33 +8,41 @@ public class DyrPrisberegner : Prisberegner
     public override decimal BeregnTotalPris()
     {
         decimal totalPris = 0;
-        
-        // Group items by their Varekode with LINQ
-
-        var groupedVarer = SolgteVarer.GroupBy(v => v.Kode);
-        //groupedVarer.OrderBy(g =>)
         Console.Clear();
-        foreach (var group in groupedVarer.OrderBy(group => group.First().Kode))
+
+        // Group items by their Varegruppe with LINQ
+        var groupedVarerByVaregruppe = SolgteVarer.GroupBy(v => v.Varegruppe).OrderBy(group => group.First().Varegruppe );
+        
+        
+        
+        foreach (var varegruppe in groupedVarerByVaregruppe)
         {
-            decimal varePris = 0;
-            var vare = group.First();
-            
-            // Console.WriteLine(vare.Kode);
-            
-            // Apply discount logic based on item code or other criteria
-            int discountPairs = 0;
-            int nonDiscountItems = group.Count();
-            if (vare.AntalForRabat > 0)
-            {
-                discountPairs = group.Count() / vare.AntalForRabat; 
-                nonDiscountItems = group.Count() % vare.AntalForRabat;
+            var groupedVarerByKode = varegruppe.GroupBy(v => v.Kode); // Group by Kode within each Varegruppe
+                 
+            Console.WriteLine($"Varer fra varegruppe {varegruppe.Key}");
+            foreach (var group in groupedVarerByKode.OrderBy(group => group.First().Kode))
+            { 
+                decimal varePris = 0;
+                var vare = group.First();
+                
+                // Console.WriteLine(vare.Kode);
+                
+                // Apply discount logic based on item code or other criteria
+                int discountPairs = 0;
+                int nonDiscountItems = group.Count();
+                if (vare.AntalForRabat > 0)
+                {
+                    discountPairs = group.Count() / vare.AntalForRabat; 
+                    nonDiscountItems = group.Count() % vare.AntalForRabat;
+                }
+                    
+                varePris += vare.Pris * nonDiscountItems;
+                varePris += vare.Pris * vare.RabatProcentDecimal * vare.AntalForRabat * discountPairs;
+                totalPris += varePris;
+                Console.WriteLine($" - {group.First().Navn} x {group.Count()}: {varePris}");
             }
-            
-            varePris += vare.Pris * nonDiscountItems;
-            varePris += vare.Pris * vare.RabatProcentDecimal * vare.AntalForRabat * discountPairs;
-            totalPris += varePris;
-            Console.WriteLine($"Total price for {group.Count()} item(s) with Varekode {group.Key}: {varePris}");
-        }
+        } 
+        Console.WriteLine("------------------------------------------------");
         return totalPris;
     }
     
@@ -44,8 +52,7 @@ public class DyrPrisberegner : Prisberegner
 
         // Implementer logik for at vise detaljeret liste over solgte varer
         // ...
-
-        decimal totalPris = BeregnTotalPris();
-        OnPrisBeregnet(totalPris);
+        
+        Console.WriteLine($"Total pris: {BeregnTotalPris():C}");
     }
 }

@@ -34,7 +34,7 @@ public class BilligPrisberegner : Prisberegner
             varePris += vare.Pris * nonDiscountItems;
             varePris += vare.Pris * vare.RabatProcentDecimal * vare.AntalForRabat * discountPairs;
             totalPris += varePris;
-            Console.WriteLine($"Total price for {group.Count()} item(s) with Varekode {group.Key}: {varePris}");
+            // Console.WriteLine($"Total price for {group.Count()} item(s) with Varekode {group.Key}: {varePris}");
         }
         return totalPris;
     }
